@@ -1,1 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizon Motor Selling Company</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="images/GENERATE FOR ME bd2491ad-12d0-490c-8f8f-c7dc2a568abe.png" alt="Left Image" class="left-image">
+        <div class="content-container">
+            <h1>Verizon Motor Selling Company</h1>
+            <form>
+                <fieldset>
+                    <legend>Personal Data</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br>
+                    <label for="mobile">Mobile Number:</label>
+                    <input type="tel" id="mobile" name="mobile" required><br>
+                    <label for="location">Location:</label>
+                    <input type="text" id="location" name="location" required><br>
+                    <label for="id">ID Number:</label>
+                    <input type="text" id="id" name="id" required><br>
+                    <label for="licence">Licence Number:</label>
+                    <input type="text" id="licence" name="licence" required><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Purchase Details</legend>
+                    <label for="plate">Vehicle Plate:</label>
+                    <input type="text" id="plate" name="plate" required><br>
+                    <label for="date">Date of Purchase:</label>
+                    <input type="date" id="date" name="date" required><br>
+                    <label for="logbook">Log Book Details:</label>
+                    <input type="text" id="logbook" name="logbook" required><br>
+                    <label for="mileage">Vehicle Mileage:</label>
+                    <input type="text" id="mileage" name="mileage" required><br>
+                    <label for="payment">Method of Payment:</label>
+                    <select id="payment" name="payment" required>
+                        <option value="blank"></option>
+                        <option value="full">Full Payment</option>
+                        <option value="hire">Hire Purchase</option>
+                    </select><br>
+                    <div id="hire-purchase" style="display: none;">
+                        <label for="months">Number of Months:</label>
+                        <input type="number" id="months" name="months" min="1"><br>
+                    </div>
+                    <label for="preferred">Preferred Payment Method:</label>
+                    <select id="preferred" name="preferred" required>
+                        <option value="blank"></option>
+                        <option value="absa">Absa</option>
+                        <option value="m-pesa">M-Pesa</option>
+                        <option value="kcb">KCB</option>
+                        <option value="family-bank">Family Bank</option>
+                        <option value="equity">Equity</option>
+                        <option value="stanbic-bank">Stanbic Bank</option>
+                    </select><br>
+                </fieldset>
+                <input type="submit" value="Submit">
+            </form>
+            <div class="flex-container">
+                <button onclick="openImagesPage()">view online showroom</button>
+            
+                <script>
+                    function openImagesPage() {
+                        window.open('image.html', '_blank');
+                    }
+                </script>
+                </div>
+        </div>
+        <img src="images/GENERATE FOR ME bd2491ad-12d0-490c-8f8f-c7dc2a568abe.png" alt="Right Image" class="right-image">
+    </div>
+    <footer>
+        we at verizon motors are priviledged to serve all our customers needs,welcome at verizon where quality meets standard.
+     
+        Honda is one of our brands partner so be assured of quality service
+    </footer>
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/KIvC5wsoW2Y" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <script>
+        document.getElementById('payment').addEventListener('change', function() {
+            var hirePurchaseDiv = document.getElementById('hire-purchase');
+            if (this.value === 'hire') {
+                hirePurchaseDiv.style.display = 'block';
+            } else {
+                hirePurchaseDiv.style.display = 'none';
+            }
+        });
+    </script>
+    <footer>
+        call our service line at:0712345678
+                                 
+    </footer>
 
+    <footer>
+                          or :0787654321
+    </footer>
+
+    <footer>
+        email us through:verizonmotorsellingcompany@gmail.com
+    </footer>
+
+    <footer>
+        facebook:verizoncompany
+    </footer>
+</body>
+</html>
